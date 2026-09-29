@@ -724,3 +724,6 @@ config ARCH_HAS_HUGEPD
 	bool
 
 endmenu
+
+source "mm/sec_mm/Kconfig"
+
