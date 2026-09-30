@@ -14,7 +14,7 @@ JOBS="$(nproc --all)"
 MAKE_PARAMS="-j$JOBS -C $SRC_DIR O=$SRC_DIR/out ARCH=arm64 CC=clang AS=clang LLVM=1 LLVM_IAS=1 CLANG_TRIPLE=$TC_DIR/bin/aarch64-linux-gnu- CROSS_COMPILE=$TC_DIR/bin/llvm-"
 export PATH="$TC_DIR/bin:$PATH"
 
-elif [ "$DEVICE_MODEL" == "SM-G9980" ]; then
+if [ "$DEVICE_MODEL" == "SM-G9980" ]; then
     DEVICE_NAME="p3q"
     DEFCONFIG=p3q_defconfig
 else
