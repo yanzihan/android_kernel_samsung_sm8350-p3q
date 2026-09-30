@@ -38,7 +38,7 @@ if [ "$KSU" == "true" ]; then
     else
         echo "KernelSU not found !"
         echo "Fetching ...."
-        curl -LSs "https://raw.githubusercontent.com/backslashxx/KernelSU/main/kernel/setup.sh" | bash -s master
+        curl -LSs "https://raw.githubusercontent.com/backslashxx/KernelSU/master/kernel/setup.sh" | bash -s master
     fi
 elif [ "$KSU" == "false" ]; then
     echo "KSU disabled"
