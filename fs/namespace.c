@@ -2472,6 +2472,7 @@ static int attach_recursive_mnt(struct mount *source_mnt,
 		kdp_assign_mnt_flags(((struct kdp_mount *)child)->mnt, nsflags);
 #else
 		child->mnt.mnt_flags &= ~MNT_LOCKED;
+#endif
 		commit_tree(child);
 	}
 	put_mountpoint(smp);

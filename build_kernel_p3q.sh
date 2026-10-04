@@ -26,8 +26,7 @@ if [ $? -ne 0 ]; then
     exit 1
 fi
 
-echo "=== 2. 开始单线程编译 ==="
-# -j1 单线程编译，便于精确定位报错点
+echo "=== 2. 开始多线程编译 ==="
 make -j16 -C ${TOPDIR} O=${TOPDIR}/out $KERNEL_MAKE_ENV ARCH=arm64 CROSS_COMPILE=$BUILD_CROSS_COMPILE REAL_CC=$KERNEL_LLVM_BIN CLANG_TRIPLE=$CLANG_TRIPLE CONFIG_SECTION_MISMATCH_WARN_ONLY=y 2>&1 | tee build.log
 
 if [ $? -eq 0 ]; then
