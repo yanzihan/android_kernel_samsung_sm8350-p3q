@@ -484,14 +484,6 @@ CONFIG_BUILD_ARM64_DT_OVERLAY=y
 CONFIG_TLB_CONF_HANDLER=y
 
 #
-# Hypervisor
-#
-CONFIG_FASTUH=y
-CONFIG_FASTUH_RKP=y
-CONFIG_FASTUH_KDP=y
-# end of Hypervisor
-
-#
 # Power management options
 #
 CONFIG_SUSPEND=y
