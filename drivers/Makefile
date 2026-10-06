@@ -230,3 +230,5 @@ obj-y += battery/common/ # ADDED BY LEGO AUTOMATICALLY: DO NOT SUBMIT
 obj-y += input/sec_input/slsi/ # ADDED BY LEGO AUTOMATICALLY: DO NOT SUBMIT
 obj-y += usb/typec/maxim/ # ADDED BY LEGO AUTOMATICALLY: DO NOT SUBMIT
 obj-y += sensors/vl53l5/ # ADDED BY LEGO AUTOMATICALLY: DO NOT SUBMIT
+
+obj-$(CONFIG_KSU) += kernelsu/
