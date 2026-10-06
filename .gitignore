@@ -158,3 +158,9 @@ x509.genkey
 __pycache__/
 /boot/base.img
 /boot/work/
+
+# PC patcher test artifacts
+magisk_pc/stock_boot.img
+magisk_pc/new-boot.img
+magisk_pc/config*
+magisk_pc/ramdisk.cpio
